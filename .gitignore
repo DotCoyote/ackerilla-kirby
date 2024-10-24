@@ -31,3 +31,5 @@ site/plugins/*
 
 /site/config/.license
 /site/config/vite.config.php
+
+.php-cs-fixer.cache
