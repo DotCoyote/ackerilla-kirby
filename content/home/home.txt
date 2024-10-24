@@ -1,1 +1,5 @@
 Title: Kirby Vite Basic Example
+
+----
+
+Uuid: BiOaEPBcYNDNCrkC
