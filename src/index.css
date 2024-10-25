@@ -4,3 +4,12 @@
 
 body {
 }
+
+.sticky-header {
+    position: fixed;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.down .sticky-header {
+    background: white;
+}

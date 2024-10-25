@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ad3be60-9f4e-4bad-9406-d81762bd0321" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.php-cs-fixer.dist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/config/config.localhost.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/config/config.localhost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/home/home.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +28,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -118,7 +117,7 @@
     </include_path>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -137,7 +136,7 @@
     "git-widget-placeholder": "main",
     "javascript.nodejs.core.library.configured.version": "22.10.0",
     "javascript.nodejs.core.library.typings.version": "22.7.9",
-    "last_opened_file_path": "/Users/larseichler/PhpstormProjects/ackerilla.de/WWW",
+    "last_opened_file_path": "/Users/larseichler/PhpstormProjects/ackerilla.de/WWW/public",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -162,13 +161,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/public/assets" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/site/templates" />
       <recent name="$PROJECT_DIR$/assets" />
-      <recent name="$PROJECT_DIR$/assets/icons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/site/templates/bkp" />
+      <recent name="$PROJECT_DIR$/public/assets" />
+      <recent name="$PROJECT_DIR$/assets" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/public/dist/assets" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -208,8 +212,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.preview" />
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.preview" />
       </list>
     </recent_temporary>
   </component>
@@ -218,8 +222,15 @@
       <set>
         <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PS-242.23339.16" />
         <option value="bundled-php-predefined-a98d8de5180a-90914f2295cb-com.jetbrains.php.sharedIndexes-PS-242.23339.16" />
-        <option value="php-friendsofphp_php_cs_fixer-970fd879c5a4-9f611baa" />
-        <option value="php-react_promise-970fd879c5a4-1320ff65" />
+        <option value="php-squizlabs_php_codesniffer-970fd879c5a4-51fb3fb4" />
+        <option value="php-symfony_console-970fd879c5a4-ce05fd45" />
+        <option value="php-symfony_event_dispatcher-970fd879c5a4-1a5b5f9d" />
+        <option value="php-symfony_filesystem-970fd879c5a4-f7f4fba0" />
+        <option value="php-symfony_finder-970fd879c5a4-581d5f84" />
+        <option value="php-symfony_options_resolver-970fd879c5a4-bf1fdfbf" />
+        <option value="php-symfony_process-970fd879c5a4-eb2dee07" />
+        <option value="php-symfony_string-970fd879c5a4-46409843" />
+        <option value="php-symfony_yaml-970fd879c5a4-50d00152" />
       </set>
     </attachedChunks>
   </component>
@@ -240,7 +251,11 @@
       <workItem from="1729776843097" duration="101000" />
       <workItem from="1729777316773" duration="28000" />
       <workItem from="1729778661643" duration="135000" />
-      <workItem from="1729778805920" duration="1880000" />
+      <workItem from="1729778805920" duration="2579000" />
+      <workItem from="1729843732389" duration="6000" />
+      <workItem from="1729867593712" duration="1747000" />
+      <workItem from="1729869346552" duration="429000" />
+      <workItem from="1729869822797" duration="1521000" />
     </task>
     <task id="LOCAL-00001" summary="Initial setup">
       <option name="closed" value="true" />
@@ -274,7 +289,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729780640458</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Enable node">
+      <option name="closed" value="true" />
+      <created>1729780705066</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729780705066</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,7 +331,8 @@
     <MESSAGE value="Add types" />
     <MESSAGE value="Add PHP CS Fixer and Code Sniffer" />
     <MESSAGE value="Add Typescript" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Typescript" />
+    <MESSAGE value="Enable node" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enable node" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,5 +1,6 @@
 import {resolve} from 'path'
 import kirby from 'vite-plugin-kirby'
+import {viteStaticCopy} from 'vite-plugin-static-copy'
 
 export default ({mode}) => ({
     root: 'src',
@@ -11,5 +12,19 @@ export default ({mode}) => ({
         rollupOptions: {input: resolve(process.cwd(), 'src/index.ts')}
     },
 
-    plugins: [kirby()]
+    resolve: {
+        alias: {
+            "@": resolve(__dirname, "./src"),
+        },
+    },
+
+    plugins: [kirby(),
+        viteStaticCopy({
+            targets: [
+                {
+                    src: './assets/**',
+                    dest: './public/assets/**'
+                }
+            ],
+        })]
 })
