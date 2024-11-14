@@ -25,6 +25,13 @@
             <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
             <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
         </div>
+        <button
+                class="
+                    bg-secondary py-2 px-4 font-semibold text-white text-sm ml-8
+                    hover:bg-secondary-800 transition-colors"
+        >
+            Jetzt Mitglied werden!
+        </button>
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->
     <div class="lg:hidden" role="dialog" aria-modal="true">
