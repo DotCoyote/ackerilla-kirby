@@ -1,6 +1,24 @@
 
 <header class="absolute inset-x-0 top-0 z-50 sticky-header" data-sticky-header>
-    <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+    <div class="bg-quaternary/70 text-xs header-top">
+        <div class="mx-auto flex max-w-7xl items-center justify-between py-2 lg:px-8">
+            <div></div>
+            <nav>
+                <ul class="flex gap-x-4">
+                    <li>
+                        <a href="#" class="text-gray-700">Kontakt</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-700">Impressum</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-700">Datenschutz</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <nav class="header-bottom mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
             <a href="#" class="-m-1.5 p-1.5">
                 <span class="sr-only">Your Company</span>
@@ -27,10 +45,10 @@
         </div>
         <button
                 class="
-                    bg-secondary py-2 px-4 font-semibold text-white text-sm ml-8
-                    hover:bg-secondary-800 transition-colors"
+                    bg-secondary py-3 px-4 font-semibold text-white text-sm ml-8
+                    hover:bg-secondary-800 transition-colors rounded-md"
         >
-            Jetzt Mitglied werden!
+            Mitglied werden
         </button>
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->

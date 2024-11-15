@@ -1,0 +1,39 @@
+title: Homepage
+
+status:
+  draft: Draft
+  listed: Published
+
+columns:
+  main:
+    width: 2/3
+    fields:
+      heroTop:
+        label: Hero Text oben
+        type: text
+      heroMiddle:
+        label: Hero Text mitte
+        type: text
+      heroBottom:
+        label: Hero Text unten
+        type: text
+      heroButton:
+        type: object
+        label: Link
+        fields:
+          link:
+            type: link
+          linkText:
+            type: text
+          target:
+            type: toggle
+            text: Open in new window?
+
+  sidebar:
+    width: 1/3
+    fields:
+      heroImage:
+        label: Hero Image
+        type: files
+        limit: 1
+        uploads: true

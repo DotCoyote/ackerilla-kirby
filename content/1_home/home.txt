@@ -1,5 +1,38 @@
-Title: Kirby Vite Basic Example
+Title: Ackerilla - Gemeinschaftlich getragene Landwirtschaft
+
+----
+
+Herotop: Regionales Gemüse ökologisch verteilt
+
+----
+
+Heromiddle: Willkommen bei der Ackerilla
+
+----
+
+Herobottom: Wir sind das Kollektiv Ackerilla – eine Gruppe von sechs Gärtner*innen und die Genossenschaft Ackerilla, bestehend aus vielen Genoss*innen.
+
+----
+
+Herobutton:
+
+link: >
+  https://www.ackerilla.de/mitglied-werden/
+linktext: Jetzt Mitglied werden!
+target: 'false'
+
+----
+
+Heroimage: - file://b7nl35bXBmE7uYJ1
 
 ----
 
 Uuid: BiOaEPBcYNDNCrkC
+
+----
+
+Linkobject:
+
+link: ""
+linktext: null
+target: false

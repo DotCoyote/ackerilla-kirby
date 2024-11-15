@@ -1,0 +1,28 @@
+.sticky-header {
+    position: fixed;
+    transition: background-color 0.2s ease-in-out;
+
+    .down & {
+        background: white;
+    }
+}
+
+.header-bottom {
+    transition: padding, background .2s ease-in-out;
+
+    .down & {
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+    }
+}
+
+
+.header-top {
+    height: 30px;
+    transition: height 0.2s ease-in-out;
+
+    .down & {
+        height: 0;
+        overflow: hidden;
+    }
+}

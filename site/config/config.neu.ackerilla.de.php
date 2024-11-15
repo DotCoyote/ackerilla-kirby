@@ -3,6 +3,7 @@
 use Kirby\Cms\Response;
 
 return array(
+    'debug' => true,
     'routes' =>
         array(
             array(
