@@ -1,3 +1,7 @@
+<?php
+/** @var Kirby\Cms\Page $page */
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5800219a283756d18dd6d300f08851be",
+    "content-hash": "a263a7285e1da3023796805259b811ab",
     "packages": [
         {
             "name": "afbora/kirby-minify-html",
@@ -684,6 +684,54 @@
                 "source": "https://github.com/michelf/php-smartypants/tree/1.8.1"
             },
             "time": "2016-12-13T01:01:17+00:00"
+        },
+        {
+            "name": "pechente/kirby-password-guard",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Pechente/kirby-password-guard.git",
+                "reference": "97175f3392d2a3d426d95c2072add73ca19e4230"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Pechente/kirby-password-guard/zipball/97175f3392d2a3d426d95c2072add73ca19e4230",
+                "reference": "97175f3392d2a3d426d95c2072add73ca19e4230",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/cms": ">=4.0.0",
+                "getkirby/composer-installer": "^1.2",
+                "php": ">=8.0.0"
+            },
+            "type": "kirby-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "René Henrich",
+                    "email": "contact@rene-henric.de"
+                }
+            ],
+            "description": "Kirby Password Guard",
+            "homepage": "https://github.com/Pechente/kirby-password-guard/",
+            "keywords": [
+                "development",
+                "guard",
+                "kirby5",
+                "kirby5-cms",
+                "kirby5-plugin",
+                "panel",
+                "password",
+                "protect"
+            ],
+            "support": {
+                "issues": "https://github.com/Pechente/kirby-password-guard/issues",
+                "source": "https://github.com/Pechente/kirby-password-guard/tree/v1.1.1"
+            },
+            "time": "2024-11-10T13:27:49+00:00"
         },
         {
             "name": "phpmailer/phpmailer",

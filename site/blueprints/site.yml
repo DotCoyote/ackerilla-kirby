@@ -1,0 +1,16 @@
+sections:
+  pages:
+    create: default
+
+  fields:
+    type: fields
+    fields:
+      menus:
+        type: structure
+        fields:
+          menuHeadline:
+            type: text
+            label: Menu headline
+          menuItems:
+            type: pages
+            label: Menu item
