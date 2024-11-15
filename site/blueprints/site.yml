@@ -5,12 +5,22 @@ sections:
   fields:
     type: fields
     fields:
-      menus:
+      mainMenu:
+        label: Hauptnavigation
         type: structure
         fields:
-          menuHeadline:
-            type: text
-            label: Menu headline
-          menuItems:
+          mainMenu:
             type: pages
-            label: Menu item
+            label: Mainmenu item
+            max: 1
+          labelText:
+            type: text
+            label: Label
+          hasSubmenu:
+            type: toggle
+            text: Include a submenu?
+          subMenu:
+            type: pages
+            label: Submenu items
+            when:
+              hasSubmenu: true

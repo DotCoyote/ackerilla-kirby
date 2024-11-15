@@ -1,3 +1,8 @@
+<?php
+
+/** @var Kirby\Cms\Site $site */
+?>
+
 
 <header class="absolute inset-x-0 top-0 z-50 sticky-header" data-sticky-header>
     <div class="bg-quaternary/70 text-xs header-top">
@@ -35,14 +40,40 @@
                 </svg>
             </button>
         </div>
-        <div class="hidden lg:flex lg:gap-x-12">
-            <a href="#" class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-                Product
-            </a>
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
-        </div>
+        <?php
+        $menu = $site->mainMenu()->toStructure();
+        if ($menu->isNotEmpty()) : ?>
+            <nav class="">
+                <ul class="hidden lg:flex lg:gap-x-12">
+                    <?php foreach ($menu as $item) : ?>
+                        <?php if ($mainMenuItem = $item->mainMenu()->toPage()) : ?>
+                            <li>
+                                <a
+                                    class="text-sm font-semibold leading-6 text-gray-900"
+                                    <?php e($mainMenuItem->isOpen(), 'aria-current="page"') ?>
+                                    href="<?= $mainMenuItem->url() ?>"
+                                >
+                                    <?php if ($item->labelText()->isNotEmpty()) : ?>
+                                        <?= $item->labelText() ?>
+                                    <?php else : ?>
+                                        <?= $mainMenuItem->title() ?>
+                                    <?php endif ?>
+                                </a>
+                        <?php endif ?>
+                        <?php $subMenu = $item->subMenu()->toPages(); ?>
+                        <?php if ($item->hasSubmenu()->isTrue() && $subMenu->isNotEmpty()) : ?>
+                            <ul class="submenu-list">
+                                <?php foreach ($subMenu as $subItem) : ?>
+                                    <li><a href="<?= $subItem->url() ?>"><?= $subItem->title() ?></a></li>
+                                <?php endforeach ?>
+                            </ul>
+                            </li>
+                        <?php endif ?>
+                    <?php endforeach ?>
+                </ul>
+            </nav>
+        <?php endif ?>
+
         <button
                 class="
                     bg-secondary py-3 px-4 font-semibold text-white text-sm ml-8

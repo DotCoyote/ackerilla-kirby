@@ -3,7 +3,7 @@
 ?>
 
 <div class="relative isolate overflow-hidden pt-14">
-    <?php if($image = $page->heroImage()->toFile()): ?>
+    <?php if ($image = $page->heroImage()->toFile()) : ?>
         <img  class="absolute inset-0 -z-10 h-full w-full object-cover" src="<?= $image->url() ?>" alt="">
     <?php endif ?>
 
