@@ -1,6 +1,6 @@
 {
   "name": "kirby-vite-basic-kit",
-  "main": "src/index.js",
+  "main": "src/index.ts",
   "type": "module",
   "scripts": {
     "vite": "vite",
@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "npm run build && npm run server"
   },
-  "author": "arnoson",
+  "author": "Lars Eichler",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^10.4.20",
@@ -21,5 +21,8 @@
     "vite": "^5.0.0",
     "vite-plugin-kirby": "^5.0.0",
     "vite-plugin-static-copy": "^2.0.0"
-  }
+  },
+  "version": "4.11.0",
+  "repository": "git@github.com:DotCoyote/ackerilla-kirby.git",
+  "private": false
 }
