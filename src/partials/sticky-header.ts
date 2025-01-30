@@ -2,6 +2,7 @@ export function initStickyHeader() {
     scroll()
     events()
 
+
     function scroll() {
         if (window.scrollY > 0) {
             document.body.classList.add('down')

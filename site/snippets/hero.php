@@ -8,8 +8,7 @@
     <?php endif ?>
 
     <div class="absolute inset-0 -z-10 bg-tertiary/20" aria-hidden="true">    </div>
-
-
+    
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="max-w-2xl py-32 sm:py-48 lg:py-56">
             <div class="hidden sm:mb-8 sm:flex">
